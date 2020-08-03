@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stephen Malkowicz</title>
+    <style type="text/css">
+	     body, html
+            {
+                margin: 0; 
+				padding: 0; 
+				height: 100%; 
+				overflow: hidden;
+				background: lightgrey;
+            }
+		#video
+            {
+				display: block;
+				width: 50%;
+				margin: 0 auto;
+				
+				border:
+				padding:2%;
+				
+				/*try to round corners*/
+				/*border-radius: 35px;*/
+				/* didn't work too well*/
+			}
+        #pdf
+            {
+				display: block;
+                /*position:absolute;*/
+				left: 0; 
+				right: 0; 
+				bottom: 0; 
+				top: 0px; 
+				
+				/*does this fix the display issue?*/
+				width : 100% ;
+				height : 100% ;
+            }
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139068774-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139068774-1');
+    </script>
+  </head>
+
+  <body>
+	<!-- Video Pitch embeding
+	<div id="video">
+	  <iframe 
+		  width="560" 
+		  height="315" 
+		  src="https://www.youtube.com/embed/Yw6u6YkTgQ4?autoplay=1" 
+		  frameborder="0" 
+		  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	  </iframe>
+    </div> Yeah, I cant center a div ¯\_(ツ)_/¯ -->
+
+	<!-- PDF embeding -->
+    <div id="pdf" >
+	  <iframe 
+		  width="100%" 
+		  height="100%" 
+		  frameborder="0" 
+		  src="https://drive.google.com/file/d/15tlDGZoaIb8K0OzOZzhmxIOTDpMvZuLe/preview">
+      </iframe>
+    </div>
+	
+  </body>
+  
+</html>
